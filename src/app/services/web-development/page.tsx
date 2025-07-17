@@ -1,8 +1,15 @@
+"use client";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeftIcon } from '@heroicons/react/24/outline';
+import dynamic from "next/dynamic";
+const ArrowLeftIcon = dynamic(() =>
+  import("@heroicons/react/24/outline").then((mod) => mod.ArrowLeftIcon),
+  { ssr: false }
+);
+ // test solid vs outline
 
-export default function WebDevelopmentService() {
+
+export default function AIIntegrationService() {
   return (
     <main className="min-h-screen bg-white">
       {/* Back Button */}
@@ -26,11 +33,11 @@ export default function WebDevelopmentService() {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Web Development <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Services</span>
+              AI <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Integration</span>
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Transform your digital presence with modern, scalable, and high-performance web solutions
+              Harness the power of artificial intelligence to transform your business operations
             </p>
           </motion.div>
         </div>
@@ -40,66 +47,57 @@ export default function WebDevelopmentService() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg max-w-none">
-            <h2>Our Web Development Approach</h2>
+            <h2>Our AI Integration Services</h2>
             <p>
-              At Neural Flow, we specialize in creating cutting-edge web applications that drive business growth. 
-              Our development process combines technical expertise with creative problem-solving to deliver 
-              solutions that exceed expectations.
+              At Neural Flow, we help businesses leverage the power of artificial intelligence to gain 
+              competitive advantages, improve efficiency, and drive innovation. Our AI solutions are 
+              tailored to your specific needs and integrated seamlessly with your existing systems.
             </p>
 
-            <h3>Technologies We Use</h3>
+            <h3>What We Offer</h3>
             <ul>
               <li>
-                <strong>Frontend:</strong> React, Next.js, TypeScript, Tailwind CSS
+                <strong>Machine Learning Solutions:</strong> Custom ML models for your specific use cases
               </li>
               <li>
-                <strong>Backend:</strong> Node.js, Python, Django, Express
+                <strong>Predictive Analytics:</strong> Data-driven insights and forecasting
               </li>
               <li>
-                <strong>Database:</strong> PostgreSQL, MongoDB, Redis
+                <strong>Natural Language Processing:</strong> Text analysis and understanding
               </li>
               <li>
-                <strong>DevOps:</strong> Docker, AWS, CI/CD
+                <strong>Computer Vision:</strong> Image and video analysis
               </li>
             </ul>
 
-            <h3>Key Features</h3>
+            <h3>Benefits</h3>
             <ul>
-              <li>Responsive design for all devices</li>
-              <li>Optimized performance and loading times</li>
-              <li>SEO-friendly architecture</li>
-              <li>Secure and scalable infrastructure</li>
-              <li>Real-time updates and notifications</li>
-              <li>Analytics and tracking integration</li>
+              <li>Improved decision-making</li>
+              <li>Enhanced customer experience</li>
+              <li>Increased operational efficiency</li>
+              <li>Better resource allocation</li>
+              <li>Competitive advantage</li>
+              <li>Future-proof solutions</li>
             </ul>
 
             <h3>Our Process</h3>
             <ol>
               <li>
-                <strong>Discovery:</strong> Understanding your requirements and business goals
+                <strong>Assessment:</strong> Understanding your AI needs and opportunities
               </li>
               <li>
-                <strong>Planning:</strong> Creating a detailed project roadmap and architecture
+                <strong>Strategy:</strong> Developing an AI implementation roadmap
               </li>
               <li>
-                <strong>Development:</strong> Building with clean, maintainable code
+                <strong>Development:</strong> Building and training AI models
               </li>
               <li>
-                <strong>Testing:</strong> Comprehensive quality assurance
+                <strong>Integration:</strong> Seamless deployment into your systems
               </li>
               <li>
-                <strong>Deployment:</strong> Smooth launch and ongoing support
+                <strong>Optimization:</strong> Continuous improvement and updates
               </li>
             </ol>
-
-            <h3>Why Choose Us?</h3>
-            <ul>
-              <li>Experienced development team</li>
-              <li>Modern tech stack and best practices</li>
-              <li>Focus on user experience</li>
-              <li>Regular updates and communication</li>
-              <li>Post-launch support and maintenance</li>
-            </ul>
           </div>
         </div>
       </section>
@@ -107,9 +105,9 @@ export default function WebDevelopmentService() {
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business with AI?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Let's discuss how we can help transform your ideas into reality
+            Let's discuss how we can help you leverage artificial intelligence
           </p>
           <Link
             href="/#contact"
