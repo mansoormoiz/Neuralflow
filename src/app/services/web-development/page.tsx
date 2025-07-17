@@ -9,7 +9,7 @@ const ArrowLeftIcon = dynamic(() =>
  // test solid vs outline
 
 
-export default function AIIntegrationService() {
+export default function WebDevelopmentService() {
   return (
     <main className="min-h-screen bg-white">
       {/* Back Button */}
@@ -33,11 +33,11 @@ export default function AIIntegrationService() {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              AI <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Integration</span>
+              Web Development <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Services</span>
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Harness the power of artificial intelligence to transform your business operations
+              Transform your digital presence with modern, scalable, and high-performance web solutions
             </p>
           </motion.div>
         </div>
@@ -47,57 +47,66 @@ export default function AIIntegrationService() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg max-w-none">
-            <h2>Our AI Integration Services</h2>
+            <h2>Our Web Development Approach</h2>
             <p>
-              At Neural Flow, we help businesses leverage the power of artificial intelligence to gain 
-              competitive advantages, improve efficiency, and drive innovation. Our AI solutions are 
-              tailored to your specific needs and integrated seamlessly with your existing systems.
+              At Neural Flow, we specialize in creating cutting-edge web applications that drive business growth. 
+              Our development process combines technical expertise with creative problem-solving to deliver 
+              solutions that exceed expectations.
             </p>
 
-            <h3>What We Offer</h3>
+            <h3>Technologies We Use</h3>
             <ul>
               <li>
-                <strong>Machine Learning Solutions:</strong> Custom ML models for your specific use cases
+                <strong>Frontend:</strong> React, Next.js, TypeScript, Tailwind CSS
               </li>
               <li>
-                <strong>Predictive Analytics:</strong> Data-driven insights and forecasting
+                <strong>Backend:</strong> Node.js, Python, Django, Express
               </li>
               <li>
-                <strong>Natural Language Processing:</strong> Text analysis and understanding
+                <strong>Database:</strong> PostgreSQL, MongoDB, Redis
               </li>
               <li>
-                <strong>Computer Vision:</strong> Image and video analysis
+                <strong>DevOps:</strong> Docker, AWS, CI/CD
               </li>
             </ul>
 
-            <h3>Benefits</h3>
+            <h3>Key Features</h3>
             <ul>
-              <li>Improved decision-making</li>
-              <li>Enhanced customer experience</li>
-              <li>Increased operational efficiency</li>
-              <li>Better resource allocation</li>
-              <li>Competitive advantage</li>
-              <li>Future-proof solutions</li>
+              <li>Responsive design for all devices</li>
+              <li>Optimized performance and loading times</li>
+              <li>SEO-friendly architecture</li>
+              <li>Secure and scalable infrastructure</li>
+              <li>Real-time updates and notifications</li>
+              <li>Analytics and tracking integration</li>
             </ul>
 
             <h3>Our Process</h3>
             <ol>
               <li>
-                <strong>Assessment:</strong> Understanding your AI needs and opportunities
+                <strong>Discovery:</strong> Understanding your requirements and business goals
               </li>
               <li>
-                <strong>Strategy:</strong> Developing an AI implementation roadmap
+                <strong>Planning:</strong> Creating a detailed project roadmap and architecture
               </li>
               <li>
-                <strong>Development:</strong> Building and training AI models
+                <strong>Development:</strong> Building with clean, maintainable code
               </li>
               <li>
-                <strong>Integration:</strong> Seamless deployment into your systems
+                <strong>Testing:</strong> Comprehensive quality assurance
               </li>
               <li>
-                <strong>Optimization:</strong> Continuous improvement and updates
+                <strong>Deployment:</strong> Smooth launch and ongoing support
               </li>
             </ol>
+
+            <h3>Why Choose Us?</h3>
+            <ul>
+              <li>Experienced development team</li>
+              <li>Modern tech stack and best practices</li>
+              <li>Focus on user experience</li>
+              <li>Regular updates and communication</li>
+              <li>Post-launch support and maintenance</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -105,9 +114,9 @@ export default function AIIntegrationService() {
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business with AI?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Let's discuss how we can help you leverage artificial intelligence
+            Let's discuss how we can help transform your ideas into reality
           </p>
           <Link
             href="/#contact"
