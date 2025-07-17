@@ -421,7 +421,7 @@ export default function Home() {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
-    <main id="home" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <main id="home" className="pt-16 sm:pt-0 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary origin-left z-50"
