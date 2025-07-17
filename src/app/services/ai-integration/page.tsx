@@ -1,6 +1,13 @@
+"use client";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeftIcon } from '@heroicons/react/24/outline';
+import dynamic from "next/dynamic";
+const ArrowLeftIcon = dynamic(() =>
+  import("@heroicons/react/24/outline").then((mod) => mod.ArrowLeftIcon),
+  { ssr: false }
+);
+ // test solid vs outline
+
 
 export default function AIIntegrationService() {
   return (
